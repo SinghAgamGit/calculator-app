@@ -13,7 +13,7 @@ justify-content: center;
 display: flex;
 }
 nav li{
-    display:inline;
+    display: inline-flex;
     margin-left: 60px;
     color: #000000;
 }
