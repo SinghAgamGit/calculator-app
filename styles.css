@@ -52,6 +52,7 @@ nav li:active:first-child{
     background-color:#f7EAD4;
     display:inline-block;
     text-align:center;
+    padding: 30px;
 }   
 /* footer */
 .footer{
