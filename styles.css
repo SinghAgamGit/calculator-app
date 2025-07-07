@@ -49,7 +49,7 @@ nav li:active:first-child{
 }
 /* about me section   */
 .about-me{
-    background-color:#f7ead4;
+    background-color:#f7EAD4;
     display:inline-block;
     text-align:center;
 }   
@@ -79,8 +79,8 @@ nav li:active:first-child{
 }
 /* footer psudo  */
 .footer_img:hover{
-    border: 4px solid #d5a450;
+    border: 4px solid #D5A450;
 }
 .footer_img:active{
-    border: 5px solid #c98000;
+    border: 5px solid #C98000;
 }
