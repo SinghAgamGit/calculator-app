@@ -1,0 +1,4 @@
+For anything to do with HTML, CSS, or JavaScript, Mozilla's MDN is my go-to. I literally have it open all the time.
+CSS Tricks has fashioned itself into a premier development website. It has great content not just for CSS but for HTML and JavaScript too. If I want a tutorial, I'll head there. If I want more technical how-to info, I head to MDN.
+For video content, you really can't beat the rest of the content on Frontend Masters. I love it.
+If I'm working with a library or a framework, it's a good idea to head directly to their GitHub (we'll talk about GitHub later) page or their official documentation. It's best to head straight to the source.
