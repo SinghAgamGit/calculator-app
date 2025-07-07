@@ -9,7 +9,7 @@
 nav{
 background-color: #C8AD7E;
 border-radius: 5px;
-justify-content: space-around;
+justify-content: flex-start;
 display: flex;
 }
 nav li{
