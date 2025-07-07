@@ -49,9 +49,9 @@ nav li:active:first-child{
 }
 /* about me section   */
 .about-me{
-    background-color: #f7ead4;
-    display: inline-block;
-    text-align: center;
+    background-color:#f7ead4;
+    display:inline-block;
+    text-align:center;
 }   
 /* footer */
 .footer{
