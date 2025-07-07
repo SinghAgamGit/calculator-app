@@ -20,9 +20,6 @@ nav li{
 nav li:first-child{
     margin-left: 0px;
 }
-nav li:last-child{
-    margin-right: 30px;
-}
 nav li:hover{
     color: #F5F5DD;
 }
