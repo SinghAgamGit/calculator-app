@@ -50,10 +50,13 @@ nav li:active:first-child{
 /* about me section   */
 .about-me{
     background-color:#f7EAD4;
-    display:inline-block;
+    /* display:inline-block; */
+    display:flex;
+    flex-direction: column;
     text-align:center;
     padding: 30px;
 }   
+
 /* footer */
 .footer{
     display: flex;
