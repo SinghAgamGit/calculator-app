@@ -1,3 +1,4 @@
+/* pre nav stuff */
 *{
     box-sizing: border-box;
 }
@@ -46,4 +47,22 @@ nav li:active:first-child{
 .my-img{
     border: 10px solid #C8AD7E;
    border-radius: 600px;
+}
+/* footer */
+.footer{
+    display: flex;
+    background-color: #D1BB91;
+    align-items: flex-end;
+    margin-top: 100%;
+}
+.footer li{
+    display: inline-flex;
+    justify-content: space-around;
+}
+.footer_img{
+    justify-content: flex-end;
+    width: 50px;
+    height: 50px;
+    border: 2px solid #C8AD7E;
+    border-radius: 300px;
 }
