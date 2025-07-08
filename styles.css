@@ -38,6 +38,7 @@ nav li:hover:first-child{
     color: #000000;
     border: 2px;
     font-size: initial;
+    background-color: initial;
 }
 
 nav li:active{
