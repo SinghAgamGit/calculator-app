@@ -116,14 +116,32 @@ backspace.addEventListener("click", function () {
 /////////////////// operators
 
 division.addEventListener("click", function () {
- if(block1 == 0){
+  // if(display.innerText != 0 && block1 != 0){
+  //   block1 = b
+  // }
+  if(block1 == 0){
     block1 = display.innerText;
     display.innerText = 0;
     operator = "/" ;
  }
  else{
- block1 = Number(block1) / Number(display.innerText);
- display.innerText = block1;
+  block2 = display.innerText;
+    if(operator == "+"){
+        block1 = Number(block1) + Number(block2)
+    }
+    else if(operator == "-"){
+        block1 = Number(block1) - Number(block2)
+    }
+    else if(operator == "/"){
+        block1 = Number(block1) / Number(block2)
+    }
+     else if(operator == "x"){
+        block1 = Number(block1) * Number(block2)
+    }
+    block2 = 0;
+    operator = 0;
+//  block1 = Number(block1) / Number(display.innerText);
+ operator = "x"
  display.innerText = 0;
  }
 });
@@ -135,8 +153,23 @@ multiplication.addEventListener("click", function () {
     operator = "x" ;
  }
  else{
- block1 = Number(block1) * Number(display.innerText);
- display.innerText = block1;
+  block2 = display.innerText;
+    if(operator == "+"){
+        block1 = Number(block1) + Number(block2)
+    }
+    else if(operator == "-"){
+        block1 = Number(block1) - Number(block2)
+    }
+    else if(operator == "/"){
+        block1 = Number(block1) / Number(block2)
+    }
+     else if(operator == "x"){
+        block1 = Number(block1) * Number(block2)
+    }
+    block2 = 0;
+    operator = 0;
+//  block1 = Number(block1) * Number(display.innerText);
+ operator = "x"
  display.innerText = 0;
  }
 });
@@ -148,8 +181,23 @@ addition.addEventListener("click", function () {
     operator = "+" ;
  }
  else{
- block1 = Number(block1) + Number(display.innerText);
- display.innerText = block1;
+  block2 = display.innerText;
+    if(operator == "+"){
+        block1 = Number(block1) + Number(block2)
+    }
+    else if(operator == "-"){
+        block1 = Number(block1) - Number(block2)
+    }
+    else if(operator == "/"){
+        block1 = Number(block1) / Number(block2)
+    }
+     else if(operator == "x"){
+        block1 = Number(block1) * Number(block2)
+    }
+    block2 = 0;
+    operator = 0;
+//  block1 = Number(block1) + Number(display.innerText);
+ operator = "+";
  display.innerText = 0;
  }
 });
@@ -161,8 +209,22 @@ subtraction.addEventListener("click", function () {
     operator = "-" ;
  }
  else{
-    block1 = Number(block1) - Number(display.innerText);
-    display.innerText = block1;
+    block2 = display.innerText;
+    if(operator == "+"){
+        block1 = Number(block1) + Number(block2)
+    }
+    else if(operator == "-"){
+        block1 = Number(block1) - Number(block2)
+    }
+    else if(operator == "/"){
+        block1 = Number(block1) / Number(block2)
+    }
+     else if(operator == "x"){
+        block1 = Number(block1) * Number(block2)
+    }
+    block2 = 0;
+    operator = "-";
+    // block1 = Number(block1) - Number(display.innerText);
     display.innerText = 0;
  }
 });
