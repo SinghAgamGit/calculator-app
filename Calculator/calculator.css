@@ -5,6 +5,16 @@
     background-color: beige;
     margin: 10% 10% 10% 10%;
   }
+/* title */
+.title{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    border: 5px black solid;
+    border-radius: 20px;
+}
 /* start of calculator */
   .display{
     grid-area: display;
@@ -12,6 +22,7 @@
     color: white;
     background-color: black;
     padding: 30px;
+    border-radius: 10px;
   }
 /* since oprerators and numbers have a different color scheme, i decided to make them different sections */
   .operator{
@@ -21,8 +32,10 @@
     padding: 30px;
     color: black;
     border: 1px black solid;
+    border-radius: 5px;
   }
   .numbers{
+    border-radius: 5px;
     display: flex;
     justify-content: center;
     color: black;
