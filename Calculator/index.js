@@ -112,36 +112,61 @@ backspace.addEventListener("click", function () {
     display.innerText = 0;
   }
 });
+
 /////////////////// operators
+
 division.addEventListener("click", function () {
  if(block1 == 0){
     block1 = display.innerText;
     display.innerText = 0;
     operator = "/" ;
  }
+ else{
+ block1 = Number(block1) / Number(display.innerText);
+ display.innerText = block1;
+ display.innerText = 0;
+ }
 });
+
 multiplication.addEventListener("click", function () {
  if(block1 == 0){
     block1 = display.innerText;
     display.innerText = 0;
     operator = "x" ;
  }
+ else{
+ block1 = Number(block1) * Number(display.innerText);
+ display.innerText = block1;
+ display.innerText = 0;
+ }
 });
+
 addition.addEventListener("click", function () {
  if(block1 == 0){
     block1 = display.innerText;
     display.innerText = 0;
     operator = "+" ;
  }
+ else{
+ block1 = Number(block1) + Number(display.innerText);
+ display.innerText = block1;
+ display.innerText = 0;
+ }
 });
+
 subtraction.addEventListener("click", function () {
  if(block1 == 0){
     block1 = display.innerText;
     display.innerText = 0;
     operator = "-" ;
  }
-
+ else{
+    block1 = Number(block1) - Number(display.innerText);
+    display.innerText = block1;
+    display.innerText = 0;
+ }
 });
+
 //////////////////// Equals method
 equal.addEventListener("click", function () {
     block2 = display.innerText;
@@ -157,4 +182,5 @@ equal.addEventListener("click", function () {
      else if(operator == "x"){
         display.innerText = Number(block1) * Number(block2)
     }
+    block1 = 0;
 });
