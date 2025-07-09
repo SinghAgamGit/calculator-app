@@ -20,84 +20,66 @@ let block1 = 0;
 let block2 = 0;
 let operator = 0;
 
+function equals(operator, block1, block2){
+    if(operator == "+"){
+        return (Number(block1) + Number(block2))
+    }
+    else if(operator == "-"){
+        return (Number(block1) - Number(block2))
+    }
+    else if(operator == "/"){
+       return (Number(block1) / Number(block2))
+    }
+     else if(operator == "x"){
+        return (Number(block1) * Number(block2))
+    }
+}
+
+function DisplayType(number, display){
+      if(display == 0){
+        return(number);
+  }
+  else{
+    return(display + number);
+  }
+};
+
 one.addEventListener("click", function () {
-  if(display.innerText == 0){
-    display.innerText = 1;
-  }
-  else{
-    display.innerText = display.innerText + 1;
-  }
+    display.innerText = DisplayType("1", display.innerText);
 });
+
 two.addEventListener("click", function () {
-  if(display.innerText == 0){
-    display.innerText = 2;
-  }
-  else{
-    display.innerText = display.innerText + 2;
-  }
+  display.innerText = DisplayType("2", display.innerText);
 });
 three.addEventListener("click", function () {
-  if(display.innerText == 0){
-    display.innerText = 3;
-  }
-  else{
-    display.innerText = display.innerText + 3;
-  }
+  display.innerText = DisplayType("3", display.innerText);
 });
 four.addEventListener("click", function () {
-  if(display.innerText == 0){
-    display.innerText = 4;
-  }
-  else{
-    display.innerText = display.innerText + 4;
-  }
+  display.innerText = DisplayType("4", display.innerText);
 });
 five.addEventListener("click", function () {
-  if(display.innerText == 0){
-    display.innerText = 5;
-  }
-  else{
-    display.innerText = display.innerText + 5;
-  }
+  display.innerText = DisplayType("5", display.innerText);
 });
 six.addEventListener("click", function () {
-  if(display.innerText == 0){
-    display.innerText = 6;
-  }
-  else{
-    display.innerText = display.innerText + 6;
-  }
+  display.innerText = DisplayType("6", display.innerText);
 });
 seven.addEventListener("click", function () {
-  if(display.innerText == 0){
-    display.innerText = 7;
-  }
-  else{
-    display.innerText = display.innerText + 7;
-  }
+  display.innerText = DisplayType("7", display.innerText);
 });
 eight.addEventListener("click", function () {
-  if(display.innerText == 0){
-    display.innerText = 8;
-  }
-  else{
-    display.innerText = display.innerText + 8;
-  }
+  display.innerText = DisplayType("8", display.innerText);
 });
 nine.addEventListener("click", function () {
-  if(display.innerText == 0){
-    display.innerText = 9;
-  }
-  else{
-    display.innerText = display.innerText + 9;
-  }
+  display.innerText = DisplayType("9", display.innerText);
 });
+
 zero.addEventListener("click", function () {
   if(display.innerText != 0){
     display.innerText = display.innerText + 0;
   }
 
 });
+
 clear.addEventListener("click", function () {
   display.innerText = 0;
   block1 = 0;
@@ -116,9 +98,6 @@ backspace.addEventListener("click", function () {
 /////////////////// operators
 
 division.addEventListener("click", function () {
-  // if(display.innerText != 0 && block1 != 0){
-  //   block1 = b
-  // }
   if(block1 == 0){
     block1 = display.innerText;
     display.innerText = 0;
@@ -126,21 +105,9 @@ division.addEventListener("click", function () {
  }
  else{
   block2 = display.innerText;
-    if(operator == "+"){
-        block1 = Number(block1) + Number(block2)
-    }
-    else if(operator == "-"){
-        block1 = Number(block1) - Number(block2)
-    }
-    else if(operator == "/"){
-        block1 = Number(block1) / Number(block2)
-    }
-     else if(operator == "x"){
-        block1 = Number(block1) * Number(block2)
-    }
+    block1 = equals(operator, block1, block2);
     block2 = 0;
     operator = 0;
-//  block1 = Number(block1) / Number(display.innerText);
  operator = "x"
  display.innerText = 0;
  }
@@ -154,22 +121,10 @@ multiplication.addEventListener("click", function () {
  }
  else{
   block2 = display.innerText;
-    if(operator == "+"){
-        block1 = Number(block1) + Number(block2)
-    }
-    else if(operator == "-"){
-        block1 = Number(block1) - Number(block2)
-    }
-    else if(operator == "/"){
-        block1 = Number(block1) / Number(block2)
-    }
-     else if(operator == "x"){
-        block1 = Number(block1) * Number(block2)
-    }
+    block1 = equals(operator, block1, block2);
     block2 = 0;
     operator = 0;
-//  block1 = Number(block1) * Number(display.innerText);
- operator = "x"
+    operator = "x"
  display.innerText = 0;
  }
 });
@@ -182,21 +137,9 @@ addition.addEventListener("click", function () {
  }
  else{
   block2 = display.innerText;
-    if(operator == "+"){
-        block1 = Number(block1) + Number(block2)
-    }
-    else if(operator == "-"){
-        block1 = Number(block1) - Number(block2)
-    }
-    else if(operator == "/"){
-        block1 = Number(block1) / Number(block2)
-    }
-     else if(operator == "x"){
-        block1 = Number(block1) * Number(block2)
-    }
+    block1 = equals(operator, block1, block2);
     block2 = 0;
     operator = 0;
-//  block1 = Number(block1) + Number(display.innerText);
  operator = "+";
  display.innerText = 0;
  }
@@ -210,21 +153,9 @@ subtraction.addEventListener("click", function () {
  }
  else{
     block2 = display.innerText;
-    if(operator == "+"){
-        block1 = Number(block1) + Number(block2)
-    }
-    else if(operator == "-"){
-        block1 = Number(block1) - Number(block2)
-    }
-    else if(operator == "/"){
-        block1 = Number(block1) / Number(block2)
-    }
-     else if(operator == "x"){
-        block1 = Number(block1) * Number(block2)
-    }
+    block1 = equals(operator, block1, block2);
     block2 = 0;
     operator = "-";
-    // block1 = Number(block1) - Number(display.innerText);
     display.innerText = 0;
  }
 });
@@ -232,17 +163,6 @@ subtraction.addEventListener("click", function () {
 //////////////////// Equals method
 equal.addEventListener("click", function () {
     block2 = display.innerText;
-    if(operator == "+"){
-        display.innerText = Number(block1) + Number(block2)
-    }
-    else if(operator == "-"){
-        display.innerText = Number(block1) - Number(block2)
-    }
-    else if(operator == "/"){
-        display.innerText = Number(block1) / Number(block2)
-    }
-     else if(operator == "x"){
-        display.innerText = Number(block1) * Number(block2)
-    }
+    display.innerText = equals(operator, block1, block2);
     block1 = 0;
 });
