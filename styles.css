@@ -97,10 +97,22 @@ nav li:active:first-child{
     border: 3px solid #BB1D24;
     border-radius: 300px;
 }
+.calculator_img {
+    width: 40px;
+    height: 50px;
+    border: 3px solid #BB1D24;
+    border-radius: 30px;
+}
 /* footer psudo  */
 .footer_img:hover{
     border: 4px;
 }
-.footer_img:active{
+.footer_img:active {
+    border: 6px;
+}
+.calculator_img:hover{
+    border: 4px;
+}
+.calculator_img:active {
     border: 6px;
 }
