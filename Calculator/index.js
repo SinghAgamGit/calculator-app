@@ -166,3 +166,24 @@ equal.addEventListener("click", function () {
     display.innerText = equals(operator, block1, block2);
     block1 = 0;
 });
+
+// now this my dog api part
+const Api_url = "https://dog.ceo/api/breeds/image/random";
+const doggos = document.getElementById("picture_of_cute_dog");
+
+function addNewDoggo() {
+  const promise = fetch(Api_url);
+  promise
+    .then(function (response) {
+    const processingPromise = response.text();
+    return processingPromise;
+  })
+    .then(function (processedResponse) {
+    const dogObject = JSON.parse(processedResponse);
+    const img = document.createElement("img");
+    img.src = dogObject.message;
+    img.alt = "Cute doggo";
+    doggos.appendChild(img);
+  });
+}
+addNewDoggo();
