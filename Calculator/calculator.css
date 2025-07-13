@@ -71,6 +71,7 @@
     .numbers:active{
     background-color: whitesmoke;
   }
+/* this is kind of the footer for the site, not much for a footer so i put some cute dogs */
   .end{
     display: flex;
     text-align: center;
